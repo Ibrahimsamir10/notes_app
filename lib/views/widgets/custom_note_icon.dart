@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -22,7 +21,7 @@ class NoteItem extends StatelessWidget {
               style: TextStyle(color: Colors.black, fontSize: 26),
             ),
             subtitle: Padding(
-              padding: const EdgeInsets.only(top: 16,bottom: 16),
+              padding: const EdgeInsets.only(top: 16, bottom: 16),
               child: Text(
                 'Build your career with ibrahim samir',
                 style: TextStyle(
@@ -31,7 +30,7 @@ class NoteItem extends StatelessWidget {
             ),
             trailing: IconButton(
               onPressed: () {},
-              icon:const Icon(
+              icon: const Icon(
                 FontAwesomeIcons.trash,
                 size: 24,
               ),
