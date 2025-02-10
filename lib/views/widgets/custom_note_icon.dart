@@ -49,7 +49,7 @@ class NoteItem extends StatelessWidget {
               child: Text(
                 'May 21 , 2022',
                 style: TextStyle(
-                  color: Colors.black.withOpacity(.4),
+                  color: Colors.black.withOpacity(.5),
                 ),
               ),
             )
