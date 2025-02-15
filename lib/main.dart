@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hive_flutter/adapters.dart';
 import 'package:store_app/cubits/add_note_cubit/add_note_cubit.dart';
 import 'package:store_app/models/note_model.dart';
@@ -24,8 +25,6 @@ class NotesApp extends StatelessWidget {
         ),
       
       ],
-   
-    )(
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
        theme: ThemeData(
