@@ -28,7 +28,6 @@ bool isloading = false;
            if(state is AddNoteSuccess){
             Navigator.pop(context);
            }
-            
           },
           builder: (context, state) {
             return ModalProgressHUD(
