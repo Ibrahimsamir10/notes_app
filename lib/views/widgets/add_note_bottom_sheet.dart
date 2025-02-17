@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -30,9 +31,9 @@ class _AddNoteBottomSheetState extends State<AddNoteBottomSheet> {
         builder: (context, state) {
           return AbsorbPointer(
             absorbing: state is AddNoteLoading ? true : false,
-            child:const Padding(
-               padding:  EdgeInsets.symmetric(horizontal: 16),
-              child:  SingleChildScrollView(child: AddNoteForm()),
+            child: Padding(
+               padding:  EdgeInsets.only(left: 16 , right: 16 , bottom: MediaQuery.of(context).viewInsets.bottom),
+              child: const SingleChildScrollView(child: AddNoteForm()),
             ),
           );
         },
